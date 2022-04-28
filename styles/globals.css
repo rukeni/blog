@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root::marker {
+  color: #52b3d0;
+  
+}
+
 html, body {
   font-family: Pretendard,-apple-system,BlinkMacSystemFont,Bazier Square,Noto Sans KR,Segoe UI,Apple SD Gothic Neo,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji
 }
@@ -9,3 +14,4 @@ html, body {
 ::selection {
   @apply bg-indigo-100
 }
+
