@@ -8,6 +8,7 @@ type LayoutProps = {
   children: ReactNode
 }
 const Layout: FC<LayoutProps> = ({children, title}) => {
+  const tempList = new Array(50).fill(0).map((el, idx) => idx +1)
   return (
     <div className="flex flex-col">
       <NavigationBar />
@@ -16,9 +17,9 @@ const Layout: FC<LayoutProps> = ({children, title}) => {
       <article className='prose flex-1 m-auto w-[calc(100vw-16rem)] max-w-full px-48 mt-10 h-full overflow-auto'>
         {children}
       {/* 페이지 이동 */}
-      <div className="flex justify-between">
-       <button>이전</button>
-       <button>다음</button>
+      <div className="flex justify-between h-16 mx-4">
+       <button className="font-bold">이전</button>
+       <button className="font-bold">다음</button>
       </div>
       <Comments />
       </article>
