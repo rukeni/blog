@@ -1,6 +1,6 @@
 My intention in writing this chapter is not to copy and paste clichés from blogs (the following excerpt aside) or pretend I was part of the historic events (like the agile manifesto or Extreme Programming activities) that led to the creation of Test-Driven Development as a methodology – trust me, I’m not that old.
 
-But I do think that giving you some context around what we’re going to discuss in this book is beneficial. I’m going to talk about the basic workflow of Test-Driven Development (TDD) and different schools of doing it practically. If you want to jump into the code directly, feel free to do so and navigate to the next chapter to get your hands dirty.
+> But I do think that giving you some context around what we’re going to discuss in this book is beneficial. I’m going to talk about the basic workflow of Test-Driven Development (TDD) and different schools of doing it practically. If you want to jump into the code directly, feel free to do so and navigate to the next chapter to get your hands dirty.
 
 ## Test-Driven Development
 
@@ -100,21 +100,13 @@ To resolve this problem, you have to write acceptance tests in relatively small 
 
 The steps remain the same; only an extra fake step is added:
 
-1. 1.
+1. Write a failed acceptance test.
 
-    Write a failed acceptance test.
+2. Make it pass in the most straightforward way (a fake implementation).
 
-2. 2.
+3. Refactor based on any code smells (like hard-coded data, magic number, etc.).
 
-    Make it pass in the most straightforward way (a fake implementation).
-
-3. 3.
-
-    Refactor based on any code smells (like hard-coded data, magic number, etc.).
-
-4. 4.
-
-    Add a new test based on new requirement (if we need a new acceptance test, go back to step 1; otherwise, the process is just like traditional TDD).
+4. Add a new test based on new requirement (if we need a new acceptance test, go back to step 1; otherwise, the process is just like traditional TDD).
 
 Note that in the second step, you can use hard-coding or a snippet of static HTML to make the test pass. At first glance, that may look redundant, but you will see the power of fake in the next few chapters.
 

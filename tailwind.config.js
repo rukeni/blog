@@ -10,11 +10,11 @@ module.exports = {
           css: {
             li: {
               '&::marker' : {
-                color: '#f00',
+                color: '#a855f7',
               }
             },
             blockquote: {
-              borderLeftColor: '#f00',
+              borderLeftColor: '#a855f7',
             },
           }
         }
