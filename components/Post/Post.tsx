@@ -1,22 +1,28 @@
-import { FC, ReactNode } from "react"
-import Comments from "../Comment";
-import FootPost from "./FootPost";
-import HeadPost from "./HeadPost";
+import { FC, ReactNode } from 'react';
+
+import Comments from '../Comment';
+import FootPost from './FootPost';
+import HeadPost from './HeadPost';
 
 type PostProps = {
   children: ReactNode;
-}
+};
 
 const Post: FC<PostProps> = ({ children }) => {
   return (
-    <article id='post' className={'prose prose-stone flex-1 m-auto w-[calc(100vw-16rem)] max-w-full px-48 mt-10 h-full overflow-auto'}>
-    <HeadPost title=''/>
-    {children}
-    {/* 페이지 이동 */}
-    <FootPost />
-    <Comments />
-  </article>
-  )
-}
+    <article
+      id='post'
+      className={
+        'overflow-auto flex-1 px-48 m-auto mt-10 w-[calc(100vw-16rem)] max-w-full h-full prose prose-stone'
+      }
+    >
+      <HeadPost title='' />
+      {children}
+      {/* 페이지 이동 */}
+      <FootPost />
+      <Comments />
+    </article>
+  );
+};
 
-export default Post
+export default Post;

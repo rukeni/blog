@@ -1,7 +1,5 @@
 const Footer = () => {
-  return (
-    <div className='h-16 flex border-t-2'>Footer</div>
-  )
-}
+  return <div className='flex h-16 border-t-2'>Footer</div>;
+};
 
-export default Footer
+export default Footer;

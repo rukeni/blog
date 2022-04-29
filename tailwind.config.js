@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -9,19 +9,17 @@ module.exports = {
         DEFAULT: {
           css: {
             li: {
-              '&::marker' : {
+              '&::marker': {
                 color: '#a855f7',
-              }
+              },
             },
             blockquote: {
               borderLeftColor: '#a855f7',
             },
-          }
-        }
-      }
+          },
+        },
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ]
-}
+  plugins: [require('@tailwindcss/typography')],
+};

@@ -1,11 +1,11 @@
-import SidebarItem from "./SidebarItem"
+import SidebarItem from './SidebarItem';
 
 const Sidebar = () => {
   return (
-    <aside className="flex flex-col justify-start items-center min-h-screen border-r-[8px] border-r-transparent w-64 overflow-auto">
+    <aside className='flex overflow-auto flex-col justify-start items-center w-64 min-h-screen border-r-[8px] border-r-transparent'>
       <SidebarItem />
     </aside>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
