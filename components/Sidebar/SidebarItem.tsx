@@ -1,16 +1,21 @@
 import Link from 'next/link';
 
+import { sidebarMenus } from './sidebarMenus';
+
 const SidebarItem = () => {
   return (
     <>
-      {new Array(50)
-        .fill(0)
-        .map((el, idx) => idx + 1)
-        .map((el, index) => (
-          <section className={'my-5 ' + (index === 0 ? 'mt-10' : '')} key={el}>
-            <Link href='/data'>{String(el)}</Link>
-          </section>
-        ))}
+      {sidebarMenus.map((menu, index) => (
+        <section
+          className={
+            'font-bold whitespace-pre my-5 hover:opacity-50 ' +
+            (index === 0 ? 'mt-10' : '')
+          }
+          key={menu.title}
+        >
+          <Link href={menu.url}>{menu.title}</Link>
+        </section>
+      ))}
     </>
   );
 };
