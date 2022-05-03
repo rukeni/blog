@@ -16,7 +16,6 @@ const Post: FC<PostProps> = ({ children }) => {
         'overflow-auto flex-1 px-48 m-auto mt-10 w-[calc(100vw-16rem)] max-w-full h-full prose prose-stone'
       }
     >
-      <HeadPost title='' />
       {children}
       {/* 페이지 이동 */}
       <FootPost />
