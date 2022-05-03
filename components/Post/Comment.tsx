@@ -3,7 +3,7 @@ import React from 'react';
 const Comments = () => {
   return (
     <section
-      className='mb-24'
+      className=''
       ref={(element) => {
         if (!element) {
           return null;
