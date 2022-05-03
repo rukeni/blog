@@ -1,8 +1,7 @@
 import { FC, ReactNode } from 'react';
 
-import Comments from './Comment';
+import Comment from './Comment';
 import FootPost from './FootPost';
-import HeadPost from './HeadPost';
 
 type PostProps = {
   children: ReactNode;
@@ -18,7 +17,7 @@ const Post: FC<PostProps> = ({ children }) => {
     >
       {children}
       {/* 페이지 이동 */}
-      <Comments />
+      <Comment />
       <FootPost />
     </article>
   );
