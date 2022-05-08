@@ -1,4 +1,4 @@
-import { FC, ReactNode, useRef, useState } from 'react';
+import { FC, ReactNode, useEffect, useRef, useState } from 'react';
 
 import FloatingTopButton from './FloatingTopButton';
 import NavigationBar from './Navigation/NavigationBar';

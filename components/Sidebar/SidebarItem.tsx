@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { sidebarMenus } from './sidebarMenus';
+
 const SidebarItem = () => {
   return (
     <>
