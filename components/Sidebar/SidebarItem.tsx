@@ -3,14 +3,9 @@ import Link from 'next/link';
 const SidebarItem = () => {
   return (
     <>
-      {new Array(50)
-        .fill(0)
-        .map((el, idx) => idx + 1)
-        .map((el, index) => (
-          <section className={'my-5 ' + (index === 0 ? 'mt-10' : '')} key={el}>
-            <Link href='/data'>{String(el)}</Link>
-          </section>
-        ))}
+      <section className={'my-5 font-bold hover:opacity-50'}>
+        <Link href='/diary/soom-1'>코드숨 1주차 회고록</Link>
+      </section>
     </>
   );
 };
