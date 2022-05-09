@@ -10,8 +10,12 @@ const HeadPost = ({ title, createdDate, updatedDate }: HeadPostProps) => {
         {title || '타이틀을 입력해주세요'}
       </h1>
       <div className='flex flex-col justify-start items-end'>
-        <p className='my-0'>작성일: {createdDate || '입력필요'}</p>
-        <p className='my-0'>변경일: {updatedDate || '입력필요'}</p>
+        <p className='my-0 lg:mt-0 lg:mb-1'>
+          작성일: {createdDate || '입력필요'}
+        </p>
+        <p className='my-0 lg:mt-0 lg:mb-8'>
+          변경일: {updatedDate || '입력필요'}
+        </p>
       </div>
     </div>
   );
