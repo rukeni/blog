@@ -5,7 +5,7 @@ import Title from './Title';
 
 const NavigationBar = () => {
   return (
-    <nav className='flex items-center h-16 border-b-2'>
+    <nav className='hidden items-center h-16 border-b-2 lg:flex'>
       <Title />
       <NavigationItem />
       <div className='flex flex-1 justify-end items-center'>
