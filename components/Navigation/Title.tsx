@@ -1,5 +1,13 @@
+import Link from 'next/link';
+
 const Title = () => {
-  return <h1 className='my-auto ml-6 text-3xl font-bold'>Title</h1>;
+  return (
+    <Link href='/'>
+      <a className='my-auto ml-6 text-3xl font-bold hover:font-thin transition-all'>
+        Home
+      </a>
+    </Link>
+  );
 };
 
 export default Title;
