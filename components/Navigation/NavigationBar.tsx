@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import { FC } from 'react';
 
 import NavigationItem from './NavigationItem';
 import Title from './Title';
 
-const NavigationBar = () => {
+const NavigationBar: FC = () => {
   return (
     <nav className='hidden items-center h-16 border-b-2 lg:flex'>
       <Title />

@@ -1,12 +1,16 @@
 import Link from 'next/link';
+import { FC } from 'react';
 
-import { sidebarMenus } from './sidebarMenus';
+type SidebarItemProps = {
+  title: string;
+  url: string;
+};
 
-const SidebarItem = () => {
+const SidebarItem: FC<SidebarItemProps> = ({ title, url }) => {
   return (
     <>
       <section className={'my-5 font-bold hover:opacity-50'}>
-        <Link href='/diary/soom-1'>코드숨 1주차 회고록</Link>
+        <Link href={url}>{title}</Link>
       </section>
     </>
   );
