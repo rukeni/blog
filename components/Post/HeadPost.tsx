@@ -21,7 +21,7 @@ const HeadPost = ({
           작성일: {createdDate || '입력필요'}
         </p>
         <p className='my-0 lg:mt-0 lg:mb-8'>
-          변경일: {updatedDate || '입력필요'}
+          수정일: {updatedDate || '입력필요'}
         </p>
       </div>
     </div>
