@@ -12,17 +12,17 @@ type NavigationBarProps = {
 
 const NavigationBar: FC<NavigationBarProps> = ({ onNavigationChange }) => {
   return (
-    <nav className='hidden items-center h-16 border-b-2 lg:flex'>
+    <nav className='flex justify-center items-center h-16 border-b-2 lg:justify-start'>
       <Title />
       <NavigationItem onNavigationChange={onNavigationChange} />
-      <div className='flex flex-1 justify-end items-center'>
-        <a href='' className='mr-8 font-semibold'>
+      <div className='flex justify-end items-center lg:flex-1'>
+        <a href='' className='hidden mr-8 font-semibold lg:block'>
           이력서
         </a>
-        <a href='' className='mr-8 font-semibold'>
+        <a href='' className='hidden mr-8 font-semibold lg:block'>
           Github
         </a>
-        <button className='p-2 mr-8 bg-red-100 rounded-full'>
+        <button className='p-2 bg-purple-100 rounded-full xs:mr-8 xs:ml-3 lg:hidden'>
           <svg
             className='w-6 h-6 fill-current'
             xmlns='http://www.w3.org/2000/svg'

@@ -41,10 +41,12 @@ export const useWindowLocation = (): Location | void => {
 
 export function usePathName() {
   const [pathName, setPathName] = useState('');
+
   const listenToPopstate = () => {
     const windowPathName = window && window.location.pathname;
     setPathName(windowPathName);
   };
+
   useEffect(() => {
     window.addEventListener('popstate', listenToPopstate);
     return () => {

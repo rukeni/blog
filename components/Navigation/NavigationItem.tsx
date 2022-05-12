@@ -24,9 +24,9 @@ const NavigationItem: FC<NavigationProps> = ({ onNavigationChange }) => {
   };
 
   return (
-    <ul className='flex ml-10'>
+    <ul className='flex overflow-x-auto lg:ml-10'>
       {navigationMenus.map((menu, index) => (
-        <li className='mx-8' key={menu.name}>
+        <li className='mx-1 text-xs lg:mx-8 lg:text-base' key={menu.name}>
           <a href={menu.url} onClick={handleNavigationChange}>
             {menu.name}
           </a>
