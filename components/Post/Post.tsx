@@ -12,7 +12,7 @@ const Post: FC<PostProps> = ({ children }) => {
     <article
       id='post'
       className={
-        'overflow-auto flex-1 px-12 m-auto mt-10 w-[calc(100vw-16rem)] max-w-full h-full prose prose-stone lg:px-48 lg:prose-xl'
+        'overflow-auto flex-1 px-12 m-auto mt-10 w-[calc(100vw-16rem)] max-w-full h-full prose lg:px-48 lg:prose-xl'
       }
     >
       {children}
