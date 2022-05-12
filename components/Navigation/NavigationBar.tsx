@@ -1,14 +1,20 @@
+import { NavigationUrl } from '@components/Layout';
 import Link from 'next/link';
 import { FC } from 'react';
+import { Url } from 'url';
 
 import NavigationItem from './NavigationItem';
 import Title from './Title';
 
-const NavigationBar: FC = () => {
+type NavigationBarProps = {
+  onNavigationChange: (keyword: string, path: string) => void;
+};
+
+const NavigationBar: FC<NavigationBarProps> = ({ onNavigationChange }) => {
   return (
     <nav className='hidden items-center h-16 border-b-2 lg:flex'>
       <Title />
-      <NavigationItem />
+      <NavigationItem onNavigationChange={onNavigationChange} />
       <div className='flex flex-1 justify-end items-center'>
         <a href='' className='mr-8 font-semibold'>
           이력서
