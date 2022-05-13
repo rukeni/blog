@@ -25,6 +25,10 @@ export const sidebarMenus: SidebarMenus[] = [
         title: 'React.createElement에 대하여',
         url: '/react/about-createElement',
       },
+      {
+        title: '[번역]리액트 Ref의 완벽한 스토리',
+        url: '/react/react-refs-the-complete-story',
+      },
     ],
   },
   {
