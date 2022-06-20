@@ -36,6 +36,10 @@ export const sidebarMenus: SidebarMenus[] = [
         title: '코드숨 6주차 회고록',
         url: '/diary/soom-6',
       },
+      {
+        title: '코드숨 7주차 회고록',
+        url: '/diary/soom-7',
+      },
     ],
   },
   {
